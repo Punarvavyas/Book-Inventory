@@ -14,7 +14,7 @@ var sendDate = (new Date()).getTime();
 
 	
 $(document).ready(function(){
-	$.post("http://127.0.0.1:5000/mongodbcall",{str1user:temp},
+	$.post("http://3.82.157.77:5000/mongodbcall",{str1user:temp},
 	function(data,status){
 		//alert(data);
 		console.log(data)
@@ -56,7 +56,7 @@ var note = document.getElementById("note").value;
 var temp = document.getElementById("search").value;
 console.log(note)
 $(document).ready(function(){
-	$.post("http://127.0.0.1:5001/usernote",{notes:note,search:temp},
+	$.post("http://3.82.157.77:5001/usernote",{notes:note,search:temp},
 	function(data,status){
 		console.log(data)
 		
@@ -71,7 +71,7 @@ $(document).ready(function(){
 function retrievenote(){
 var temp = document.getElementById("search").value;
 $(document).ready(function(){
-	$.post("http://127.0.0.1:5001/retrievenote",{search:temp},
+	$.post("http://3.82.157.77:5001/retrievenote",{search:temp},
 	function(data,status){
 		console.log(data)
 		

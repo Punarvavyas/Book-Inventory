@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f82dfd2-0b93-4301-88ed-0b231f5ac013" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/q2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchcatalogue/logfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/searchcatalogue/logfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchcatalogue/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchcatalogue/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchcatalogue/mongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchcatalogue/mongo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchcatalogue/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/searchcatalogue/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usernote_folder/flasknotes.py" beforeDir="false" afterPath="$PROJECT_DIR$/usernote_folder/flasknotes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usernote_folder/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/usernote_folder/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usernote_folder/usernote.json" beforeDir="false" afterPath="$PROJECT_DIR$/usernote_folder/usernote.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flasknotes.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="flasknotes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usernote_folder/flasknotes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="306">
               <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -75,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpage.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="webpage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            <state relative-caret-position="85">
+              <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -146,11 +138,11 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/searchcatalogue/requirements.txt" />
         <option value="$PROJECT_DIR$/usernote_folder/requirements.txt" />
-        <option value="$PROJECT_DIR$/webpage.html" />
         <option value="$PROJECT_DIR$/q2.py" />
         <option value="$PROJECT_DIR$/searchcatalogue/mongo.py" />
         <option value="$PROJECT_DIR$/searchcatalogue/main.py" />
         <option value="$PROJECT_DIR$/usernote_folder/flasknotes.py" />
+        <option value="$PROJECT_DIR$/webpage.html" />
       </list>
     </option>
   </component>
@@ -569,19 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/q2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -614,10 +593,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/usernote_folder/flasknotes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="306">
           <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
