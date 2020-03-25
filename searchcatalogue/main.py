@@ -1,8 +1,8 @@
 from flask import Flask,request
 from flask_cors import CORS
 import mongo as m
-import catalogue as c
-import searchlog as sl
+from searchcatalogue import catalogue as c
+from searchcatalogue import searchlog as sl
 import time
 from bson.json_util import dumps
 
