@@ -1,6 +1,7 @@
 
 from pymongo import MongoClient
 import re
+import time
 count = 1
 for i in range(1996,2021):
     print(i)
@@ -28,12 +29,13 @@ for i in range(1996,2021):
                     authorname = strings.split('by')[1]
                     print(count)
                     count = count + 1
-
+                   # time.sleep(0.001)
                     print("Bookname:", bookname)
                     print("Author name:", authorname)
-                    client = MongoClient('mongodb://localhost:27017/')
+                    client = MongoClient('mongodb://localhost:27017')
                     db = client.cloud.bookinventory
-                    db.insert(
+                    
+                    db.insert_one(
                         {"Bookname": bookname,
                          "Authorname": authorname,
 
