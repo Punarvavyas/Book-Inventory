@@ -29,9 +29,9 @@ for i in range(1996,2021):
                     print(count)
                     count = count + 1
 
-                    print("Bookname:", bookname)
-                    print("Author name:", authorname)
-                    client = MongoClient('mongodb://localhost:27017/')
+                    #print("Bookname:", bookname)
+                   # print("Author name:", authorname)
+                    client = MongoClient('mongodb://3.82.157.77:27017')
                     db = client.cloud.bookinventory
                     db.insert(
                         {"Bookname": bookname,
