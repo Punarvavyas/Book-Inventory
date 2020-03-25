@@ -1,0 +1,137 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+function search(){
+
+
+var temp = document.getElementById("search").value;
+console.log(temp)
+
+var sendDate = (new Date()).getTime();
+
+
+	
+$(document).ready(function(){
+	$.post("http://127.0.0.1:5000/mongodbcall",{str1user:temp},
+	function(data,status){
+		//alert(data);
+		console.log(data)
+		var data1=JSON.stringify(data)
+		console.log(data1)
+		var m=JSON.parse(data);
+		console.log(m)
+		 var receiveDate = (new Date()).getTime();
+		 var responseTimeMs = receiveDate - sendDate;
+		 console.log(responseTimeMs)
+		//alert(responseTimeMs);
+		 var txt="";
+		 txt += "<table border='1'>"
+		 txt += "<tr><td><b> Bookname</b></td><td><b>Authorname</b></td></tr>"
+    for (var j=0;j<m.length;j++) {
+	txt += "<tr><td>" +m[j].Bookname + "</td><td>"    +m[j].Authorname + "</td></tr>";
+	
+	
+	
+	
+      
+    }
+	
+    txt += "</table>"
+	 document.getElementById("demo").innerHTML = txt;
+		 document.getElementById("note").style.visibility = 'visible';
+		 document.getElementById("ret").style.visibility = 'visible';
+		
+		 document.getElementById("sub").style.visibility = 'visible';
+		 
+		 
+	});
+});
+}
+
+
+function submitnote(){
+var note = document.getElementById("note").value;
+var temp = document.getElementById("search").value;
+console.log(note)
+$(document).ready(function(){
+	$.post("http://127.0.0.1:5001/usernote",{notes:note,search:temp},
+	function(data,status){
+		console.log(data)
+		
+
+	});
+});
+
+	
+
+}
+
+function retrievenote(){
+var temp = document.getElementById("search").value;
+$(document).ready(function(){
+	$.post("http://127.0.0.1:5001/retrievenote",{search:temp},
+	function(data,status){
+		console.log(data)
+		
+		var data1=JSON.stringify(data)
+		console.log(data1)
+		var m=JSON.parse(data);
+		console.log(m)
+		
+		notetext="";
+		for (var j=0;j<m.length;j++) {
+			notetext += m[j]+ " ";
+	}
+		console.log(notetext)
+		document.getElementById("retrievedtext").style.visibility = 'visible';
+		if(notetext.length==[])
+		{
+		
+		document.getElementById("retrievedtext").value = "NO NOTES AVAILAIBLE";}
+		
+		else
+		{
+		document.getElementById("retrievedtext").value = notetext;
+		}
+		
+		
+		
+		
+	});
+});
+
+}
+</script>
+</head>
+<body>
+
+<label for="search" >Search Bookname or Authorname keyword:</label>
+<input type="text" id="search" >
+
+
+
+
+
+<button onclick="search()">submit</button><br>
+
+<textarea rows="5" cols="60" id="note" name="note" style="visibility:hidden" placeholder="Give note for the keyword"></textarea><br>
+<button id="sub" style="visibility:hidden" onclick="submitnote()">Submit Note</button>
+<button id="ret" style="visibility:hidden" onclick="retrievenote()">Retrieve Notes</button><br>
+
+
+
+
+<textarea rows = "5" cols = "60" name = "description" id="retrievedtext" style="visibility:hidden"> </textarea><br>
+
+
+<p id="demo"></p>
+
+
+
+</body>
+
+
+
+<html>
