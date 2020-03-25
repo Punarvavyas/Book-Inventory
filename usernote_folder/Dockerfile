@@ -1,10 +1,10 @@
 FROM python:3.7-alpine
 WORKDIR /code
-ENV FLASK_APP flasknotes.py
+ENV FLASK_APP main.py
 ENV FLASK_RUN_HOST 0.0.0.0
 RUN apk add --no-cache gcc musl-dev linux-headers
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 COPY . .
-RUN pip install CORS
+RUN pip install CORS==3.0.8
 CMD ["flask", "run"]
