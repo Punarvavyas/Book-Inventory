@@ -7,7 +7,7 @@ import regex
 from pymongo import TEXT
 
 def mongo_ext(str1):
-    client = MongoClient('mongodb://3.82.157.77:27017')
+    client = MongoClient('mongodb://3.87.243.103:27017')
     db = client.cloud
     t0=time.clock()
     print(str1)

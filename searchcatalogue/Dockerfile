@@ -1,4 +1,3 @@
-File Edit Options Buffers Tools Help
 FROM python:3.6.5-alpine
 WORKDIR /code
 ENV FLASK_APP main.py
