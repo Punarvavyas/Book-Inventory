@@ -18,8 +18,7 @@ pr_name = ""
 def usernote():
     print(pr_name)
     notedata = request.form.get('notes')
-    keyname= request.form.get('search')
-    print(keyname)
+    keyname= request.form.get('search')                                                                                                                                                          print(keyname)
     print(pr_name)
 
     if keyname in note_dict:
@@ -50,4 +49,5 @@ def retrievenote():
 
 
 if __name__ == '__main__':
+
     app.run(host='0.0.0.0', port=5004, debug=False)
