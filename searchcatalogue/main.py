@@ -1,8 +1,9 @@
+
 from flask import Flask,request
 from flask_cors import CORS
 import mongo as m
-from searchcatalogue import catalogue as c
-from searchcatalogue import searchlog as sl
+import catalogue as c
+import searchlog as sl
 import time
 from bson.json_util import dumps
 
@@ -32,4 +33,4 @@ def mongodbcall():
 
 
 if __name__ == '__main__':
-    app.run(host='3.82.157.77', port=5000, debug=False)
+    app.run(host='127.0.0.1', port=5000, debug=False)

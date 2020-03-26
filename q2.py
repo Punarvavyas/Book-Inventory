@@ -1,4 +1,3 @@
-
 from pymongo import MongoClient
 import re
 import time
@@ -23,7 +22,7 @@ for i in range(1996,2021):
         if re.findall(r'(\w+?)(\s+)(\d)', str(line)):
                 if 'by' in str(line):
                     strings = re.sub(r'\d+', '', line)
-                    print(strings)
+                    #print(strings)
                     bookname = strings.split('by')[0]
                     bookname = re.sub(r',', '', bookname)
                     authorname = strings.split('by')[1]
