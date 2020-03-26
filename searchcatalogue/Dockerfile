@@ -6,5 +6,6 @@ RUN apk add --no-cache gcc musl-dev linux-headers
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 COPY . .
+RUN pip install flask_cors==3.0.8
 RUN pip install CORS==3.0.8
 CMD ["flask", "run"]
